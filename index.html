@@ -24,14 +24,20 @@
         <div class="logo-nav">
           <a id="logo" href="#intro"><img src="images/logo.svg" alt="my face"></a>
         </div>
-        <div id="desktop-navbar">
-          <ul>
+        <div id="desktop-navbar" class="relative">
+          <ul class="nav-ul-flex">
             <li><a href="#salotti" id="salotti-btn" class="nav-item nav-item-hover"><span class="nav-text">Salotti</span></a></li>
             <li><a href="#weare" id="weare-btn" class="nav-item nav-item-hover"><span class="nav-text">We are</span></a></li>
             <li><a href="#reviews" id="reviews-btn" class="nav-item nav-item-hover"><span class="nav-text">Reviews</span></a></li>
             <li><a href="#prices" id="prices-btn" class="nav-item nav-item-hover"><span class="nav-text">Prices</span></a></li>
-            <li><a href="#languages" id="languages-btn" class="nav-item nav-item-hover"><i class="fa-solid fa-earth-europe"></i></a></li>
+            <li><a id="languages-btn" class="nav-item nav-item-hover"><i class="fa-solid fa-earth-europe"></i></a></li>
           </ul>
+          <div id="dropdown-content" class="hidden">
+            <ul>
+              <li class="right"><a href="#">English</a></li>
+              <li class="right"><a href="#">Italian</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
@@ -309,6 +315,10 @@
     </footer>
 
     <script>
+      document.querySelector('#languages-btn').addEventListener('click', (event) => {
+        document.querySelector('#dropdown-content').classList.toggle('hidden');
+      })
+
       document.addEventListener("DOMContentLoaded", () => {
         const innerWrapper = document.querySelector(".scrolling-text-inner-wrapper");
         const items = innerWrapper.querySelectorAll("h1");
