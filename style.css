@@ -111,28 +111,33 @@ a {
 .link-special:hover {
   color:#2BC2A4;
 }
+.discount {
+  color: #c33c54;
+  padding: 0 2px;
+  border: 1px solid #c33c54;
+  border-radius: 3px;
+}
 
 /* Text decorations */
 .yellow-highlight {
   background-color: #f4ff77d0;
   font-weight: 500;
-  color: #101010;
-  padding: 1px 5px;
-  line-height: 0.8rem;
+  padding: 0.2px 4px;
 }
 .light-highlight {
   background-color: #f0e9d9;
-  color: #101010;
   font-weight: 500;
-  padding: 1px 5px;
-  margin-bottom: 0.08rem;
+  padding: 0.2px 4px;
 }
 .purple-highlight {
   background-color: #7c90f65d;
-  color: #101010;
   font-weight: 500;
-  padding: 1px 5px;
-  margin-bottom: 0.08rem;
+  padding: 0.2px 4px;
+}
+.green-highlight {
+  background-color: rgba(148, 179, 147, 0.427);
+  font-weight: 500;
+  padding: 0.2px 4px;
 }
 
 /* Containers and divs */
@@ -301,6 +306,14 @@ a {
 .my-1 {
   margin: 1rem;
 }
+.gap-1 {
+  gap: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.bigger-space li {
+  margin-bottom: 0.8em;
+}
 
 /* sections */
 section {
@@ -308,18 +321,18 @@ section {
   min-height: calc(100vh - 30px);
 }
 
-#intro, #managing {
+#intro, #prices {
+  background-color: #f9f8f2;
+  color: #101010;
+}
+
+#salotti, #reviews {
   background-color: #f0e9d9;
   color: #101010;
 }
 
-#teaching, #learning {
-  background-color: #f0e9d9;
-  color: #101010;
-}
-
-#skills {
-  background-color: #D4CAC4;
+#weare {
+  background-color: #fff;
   color: #101010;
 }
 
@@ -619,9 +632,8 @@ footer ul {
   font-weight: 600;
 }
 
-.white-bg {
-  /* background-color: #ffffffc0; */
-  background-color: #f4ff7774;
+.light-bg {
+  background-color: #f9f8f2bf;
   padding: 8px 12px;
   border-radius: 3px;
 }
