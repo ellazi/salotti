@@ -475,6 +475,8 @@
         function applyIntroStyles() {
           navbar.style.backgroundColor = '';
           footer.style.backgroundColor = '';
+          navbar.classList.remove('background-blur');
+          footer.classList.remove('background-blur');
           navLinks.forEach(link => {
             link.style.color = '#101010';
             link.classList.add('nav-item-hover');
@@ -492,7 +494,10 @@
         }
 
         function applyDarkStyles() {
-          navbar.style.backgroundColor = '#f0e9d9';
+          // navbar.style.backgroundColor = '#f0e9d9';
+          // footer.style.backgroundColor = '#f0e9d9';
+          navbar.classList.add('background-blur');
+          footer.classList.add('background-blur');
           links.forEach(link => {
             link.style.color = '#101010';
             link.classList.add('nav-item-hover');
@@ -501,7 +506,6 @@
             link.style.color = '#101010';
             link.classList.add('nav-item-hover');
           });
-          footer.style.backgroundColor = '#f0e9d9';
           svgIcons.forEach(icon => {
             icon.setAttribute('stroke', '#101010');
           });
@@ -511,7 +515,10 @@
         }
 
         function applyMidColourStyles() {
-          navbar.style.backgroundColor = '#f9f8f2';
+          // navbar.style.backgroundColor = '#f9f8f2';
+          // footer.style.backgroundColor = '#f9f8f2';
+          navbar.classList.add('background-blur');
+          footer.classList.add('background-blur');
           links.forEach(link => {
             link.style.color = '#101010';
             link.classList.add('nav-item-hover');
@@ -520,7 +527,6 @@
             link.style.color = '#101010';
             link.classList.add('nav-item-hover');
           });
-          footer.style.backgroundColor = '#f9f8f2';
           svgIcons.forEach(icon => {
             icon.setAttribute('stroke', '#101010');
           });
@@ -530,7 +536,10 @@
         }
 
         function applyLightStyles() {
-          navbar.style.backgroundColor = '#fff';
+          // navbar.style.backgroundColor = '#fff';
+          // footer.style.backgroundColor = '#fff';
+          navbar.classList.add('background-blur');
+          footer.classList.add('background-blur');
           links.forEach(link => {
             link.style.color = '#101010';
             link.classList.add('nav-item-hover');
@@ -539,7 +548,6 @@
             link.style.color = '#101010';
             link.classList.add('nav-item-hover');
           });
-          footer.style.backgroundColor = '#fff';
           svgIcons.forEach(icon => {
             icon.setAttribute('stroke', '#101010');
           });

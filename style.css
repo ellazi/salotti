@@ -555,7 +555,7 @@ footer ul {
   align-items: flex-end;
 }
 
-.outer-div {
+/* .outer-div {
   height: 45vh;
   width: 100%;
   overflow-y: scroll;
@@ -587,7 +587,7 @@ footer ul {
 
 .inner-div p {
   margin: 5px;
-}
+} */
 
 .list-no-indentation {
   padding-left: 12px;
@@ -598,7 +598,7 @@ footer ul {
 }
 
 /* lanlands */
-.gap1 {
+/* .gap1 {
   gap: 1em;
 }
 
@@ -618,10 +618,10 @@ footer ul {
   height: 100%;
   object-fit: cover;
   border-radius: 5px;
-}
+} */
 
 /* teaching */
-.outer-div-reviews {
+/* .outer-div-reviews {
   width: 100%;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
@@ -634,15 +634,15 @@ footer ul {
   gap: 1em;
   margin-top: 2rem;
   border-bottom: 1px solid #636161;
-}
+} */
 
-.height-360 {
+/* .height-360 {
   max-height: 36em;
 }
 
 .height-700 {
   max-height: 67em;
-}
+} */
 
 .review-name {
   /* font-weight: 600; */
