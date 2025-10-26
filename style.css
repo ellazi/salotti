@@ -526,6 +526,7 @@ footer ul {
   display: flex;
   flex-direction: column;
   transition: transform 0.5s ease;
+  gap: 0;
 }
 
 .scrolling-text-inner-wrapper h1 {
